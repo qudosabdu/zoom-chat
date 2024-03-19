@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.chat-container {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+}
+
+.chat-messages {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.chat-message {
+  background-color: #f1f0f0;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
+
+#meeting-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.suggested-messages {
+  text-align: center;
+}
+
+.suggested-message {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.suggested-message:hover {
+  background-color: #0056b3;
+}
+
+.input-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+#send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#send-button:hover {
+  background-color: #0056b3;
+}
+
+/* Existing styles for chat container, suggested messages, input field, and send button */
+
+.user-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; /* Make the icon circular */
+  margin-right: 8px; /* Add spacing between icon and message text */
+}
+
+.chat-message-content {
+  display: flex;
+  align-items: center;
+}
+
+.chat-message {
+  background-color: #f1f0f0;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
+
+.suggested-messages {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.suggested-message {
+  display: inline-block;
+
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.suggested-message:hover {
+  background-color: #0056b3;
+}

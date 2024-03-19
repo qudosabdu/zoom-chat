@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom Chat</title>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div id="meeting-title">Hello</div>
+      <div class="chat-messages" id="chat-messages">
+        <!-- Chat messages will be displayed here -->
+      </div>
+      <div class="suggested-messages" id="suggested-messages">
+        <!-- Suggested messages will be loaded here -->
+      </div>
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

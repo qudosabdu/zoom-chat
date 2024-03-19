@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Zoom Bot",
+  "version": "1.0",
+  "description": "This extension will help you to automate your zoom meetings.",
+  "permissions": [
+    "activeTab",
+    "https://*.zoom.us/*",
+    "http://*.zoom.us/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "bot-icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.zoom.us/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "bot-icon.png",
+    "48": "bot-icon.png",
+    "128": "bot-icon.png"
+  }
+}
